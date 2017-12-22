@@ -51,7 +51,7 @@ public class AccountBook2 {
 		Scanner scan = new Scanner(System.in);
 		try {
 			FileWriter output = new FileWriter("accountbook.txt", true);
-			System.out.print("추가할 내용을 입력해주세요 : ");
+			System.out.print("추가할 내용을 입력해주세요(숫자/이름/가격 순으로) : ");
 			String accountbook = scan.nextLine();
 			String data = accountbook + "\r\n";
 			output.write(data);
@@ -71,8 +71,6 @@ public class AccountBook2 {
 		System.out.println();
 	}
 	void ShowAccountBook(){
-		System.out.print("test4");
-		System.out.println();
 		try {
 			BufferedReader output = new BufferedReader(new FileReader("accountbook.txt"));
 			while(true) {
