@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class AccountBook2 {
 
 	void AccountMenu() {
+		System.out.println("..ÄÚµùÁß..");
 		Scanner scan = new Scanner(System.in);
 		int num = 0;
 		while(num!=5 || num!=6) {
